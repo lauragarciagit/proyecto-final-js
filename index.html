@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¡Luces, Preguntas... Acción!</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>¡Luces, Preguntas... Acción!</h1>
+
+    <div class="name-input">
+      <label for="nombre">Ingresa tu nombre y presiona "Enviar"</label>
+      <input type="text" id="nombre" placeholder="Tu nombre aquí..." />
+      <button id="btnEnviar">Enviar</button>
+    </div>
+
+    <p id="mensaje"></p>
+
+    <p class="instrucciones">
+      Instrucciones: Debes seleccionar la respuesta que te parece correcta. ¡Tienes 1 intento!
+      <br />
+      Por cada respuesta correcta sumas 30 puntos y por cada incorrecta te restan 10.
+      <br />
+      ¡A jugar!
+    </p>
+
+    <button id="guardarNombre">Guardar Nombre</button>
+    <button id="eliminarNombre">Eliminar Nombre</button>
+
+    <div class="puntaje">
+      Puntaje: <span id="puntuacion">0</span>
+    </div>
+
+    <p id="puntosGanador"></p>
+  </div>
+
+  <!-- Contenedor vacío donde JS cargará las preguntas -->
+  <div class="cards"></div>
+</body>
+</html>
